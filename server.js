@@ -5,11 +5,6 @@ const PORT = process.env.PORT || 8080
 
 app.use(express.json())  // body-parser
 
-var corsOptions = {
-    origin: "http://localhost:2022"
-  };
-
-  app.use(cors());
 
 //   const db = require("./models");
 const db = require("./app/models")
